@@ -9,7 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main">
+        <activity android:name=".Main"
+            android:label="UTC Reading">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main_swindon"
+            android:label="UTC Swindon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main_heathrow"
+            android:label="UTC Heathrow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,5 +34,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>
